@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #000080;;
+}
+
+#main-div{
+
+}
+
+#header{
+    font-family:'Pacifico', Helvetica, sans-serif;
+    color: white;
+    font-size: 3rem;
+    margin: 10px 0px;
+}
+
+#buttons-div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-class{
+    text-align: center;
+    /* border: 0.2rem solid white; */
+    background-color: white;
+    color: #000080;
+    padding: 1 rem;
+    font-family:'Pacifico', Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    margin-left: 10px;
+}
+
+#main-canvas{
+    background-color: white;
+    width: 800px;
+    height: 550px;
+}
