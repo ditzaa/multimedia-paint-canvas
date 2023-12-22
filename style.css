@@ -24,7 +24,6 @@ body{
 
 .button-class{
     text-align: center;
-    /* border: 0.2rem solid white; */
     background-color: white;
     color: #000080;
     padding: 1 rem;
@@ -35,8 +34,6 @@ body{
     margin-left: 10px;
 }
 
-#main-canvas{
+#canvas{
     background-color: white;
-    width: 800px;
-    height: 550px;
 }
