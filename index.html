@@ -20,13 +20,28 @@
             <div>
                 <h5>Size</h5>
                 <input type="range" id="input-line-size" min="1" max="40" value="10">
-            </div>   
+            </div>
+            <div id="color-picker-container">
+                <h5>Color picker</h5>
+                <div>
+                    <button class="button-class colors" id="black">Negru</button>
+                    <button class="button-class colors" id="red">Rosu</button>
+                    <button class="button-class colors" id="orange">Oranj</button>
+                    <button class="button-class colors" id="purple">Mov</button>
+                </div>
+                <div>
+                    <button class="button-class colors" id="yellow">Galben</button>
+                    <button class="button-class colors" id="green">Verde</button>
+                    <button class="button-class colors" id="blue">Albastru</button>
+                    <input type="color" id="color-picker" value="#FFB6C1">
+                </div>
+            </div> 
         </div>
         <canvas id="canvas">
             Your browser does not support the canvas element
         </canvas>
         <div class="buttons-div">
-            <h3>Salveaza</h3>
+            <h3>Salvează</h3>
             <button class="button-class" id="btn-save-raster">Raster</button>
             <button class="button-class" id="btn-save-svg">Vectorial</button>
         </div>

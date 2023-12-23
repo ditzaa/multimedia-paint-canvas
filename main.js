@@ -10,6 +10,8 @@ const btnLine = document.getElementById('btn-linie');
 const btnSaveRaster = document.getElementById('btn-save-raster');
 const btnSaveVectorial = document.getElementById('btn-save-svg');
 const inputLineSize = document.getElementById('input-line-size');
+const btnColors = document.querySelectorAll('.colors');
+const colorPicker = document.getElementById('color-picker');
 
 //set canvas dimensions
 canvas.width = 800;
@@ -58,6 +60,16 @@ btnSaveVectorial.addEventListener('click', () =>{
 inputLineSize.addEventListener('change', ()=>{
     lineSize = inputLineSize.value;
     console.log(lineSize);
+});
+
+for(let btnColor of btnColors){
+    btnColor.addEventListener('click', ()=>{
+        ctx.strokeStyle = btnColor.id;
+    })
+}
+
+colorPicker.addEventListener('change', ()=>{
+    ctx.strokeStyle = colorPicker.value;
 })
 
 function drawElipsa(e){
