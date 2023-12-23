@@ -40,7 +40,6 @@ btnElipsa.addEventListener('click', () =>{
 });
 
 btnLine.addEventListener('click', () =>{
-    console.log("Am ales sa desenez o linie");
     tool = 'line';
 });
 
@@ -52,7 +51,6 @@ btnSaveRaster.addEventListener('click', () =>{
     a.click();
 });
 
-//"change", () => brushWidth = sizeSlider.value
 inputLineSize.addEventListener('change', ()=>{
     lineSize = inputLineSize.value;
     console.log(lineSize);
@@ -62,7 +60,6 @@ for(let btnColor of btnColors){
     btnColor.style.backgroundColor = btnColor.id;
     btnColor.addEventListener('click', ()=>{
         ctx.strokeStyle = btnColor.id;
-        
     })
 }
 
@@ -84,10 +81,6 @@ function drawElipsa(e){
 
 function drawRectangle(e){
     ctx.strokeRect(e.offsetX, e.offsetY, prevMouseX - e.offsetX, prevMouseY - e.offsetY);
-    // console.log("OFFSET X: " + e.offsetX);
-    // console.log("PREV X: " + prevMouseX);
-    // console.log("OFFSET Y: " + e.offsetY);
-    // console.log("PREV Y: " + prevMouseY);
 }
 
 function drawLine(e){

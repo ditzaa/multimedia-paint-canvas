@@ -2,7 +2,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #000080;
+    background-color: #5095FF;
     color: white;
 }
 
@@ -35,25 +35,12 @@ h3{
     margin-left: 10px;
 }
 
-.button-shape{
-    width: 0px;
-    height: 0px;
-    border-style: none; 
-}
-
-
 .button-class, #color-picker{
    width: 40px;
    height: 40px;
    margin-left: 10px;
    border-radius: 10px;
    border-style: none; 
-}
-
-#color-picker{
-    margin-top: 0;
-    width: 40px;
-    height: 40px;
 }
 
 .color-row{
@@ -71,6 +58,7 @@ h3{
 
 .button-save{
     text-align: center;
+    border-style: none;
     background-color: white;
     color: #000080;
     padding: 1 rem;
