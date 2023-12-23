@@ -9,14 +9,14 @@ body{
 
 }
 
-#header{
+#header, h5, h3{
     font-family:'Pacifico', Helvetica, sans-serif;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 10px 0px;
 }
 
-#buttons-div{
+.buttons-div{
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
@@ -35,5 +35,5 @@ body{
 }
 
 #canvas{
-    background-color: white;
+    /* background-color: white; */
 }

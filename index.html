@@ -13,14 +13,23 @@
 <body>
     <div id="main-div">
         <h1 id="header">Pictasso</h1>
-        <div id="buttons-div">
+        <div class="buttons-div">
             <button class="button-class" id="btn-elipsa">Elipsa</button>
             <button class="button-class" id="btn-dreptunghi">Dreptunghi</button>
-            <button class="button-class" >Linie</button>
+            <button class="button-class" id="btn-linie">Linie</button>
+            <div>
+                <h5>Size</h5>
+                <input type="range" id="input-line-size" min="1" max="40" value="10">
+            </div>   
         </div>
         <canvas id="canvas">
             Your browser does not support the canvas element
         </canvas>
+        <div class="buttons-div">
+            <h3>Salveaza</h3>
+            <button class="button-class" id="btn-save-raster">Raster</button>
+            <button class="button-class" id="btn-save-svg">Vectorial</button>
+        </div>
     </div>
 </body>
 
