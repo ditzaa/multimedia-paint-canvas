@@ -8,7 +8,6 @@ const btnRect = document.getElementById('btn-dreptunghi');
 const btnElipsa = document.getElementById('btn-elipsa');
 const btnLine = document.getElementById('btn-linie');
 const btnSaveRaster = document.getElementById('btn-save-raster');
-const btnSaveVectorial = document.getElementById('btn-save-svg');
 const inputLineSize = document.getElementById('input-line-size');
 const btnColors = document.querySelectorAll('.colors');
 const colorPicker = document.getElementById('color-picker');
@@ -18,6 +17,7 @@ canvas.width = 800;
 canvas.height = 500;
 ctx.fillStyle = "white";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
+canvas
 
 let tool = '',
 isPainting = false,
@@ -52,10 +52,6 @@ btnSaveRaster.addEventListener('click', () =>{
     a.click();
 });
 
-
-btnSaveVectorial.addEventListener('click', () =>{
-});
-
 //"change", () => brushWidth = sizeSlider.value
 inputLineSize.addEventListener('change', ()=>{
     lineSize = inputLineSize.value;
@@ -63,8 +59,10 @@ inputLineSize.addEventListener('change', ()=>{
 });
 
 for(let btnColor of btnColors){
+    btnColor.style.backgroundColor = btnColor.id;
     btnColor.addEventListener('click', ()=>{
         ctx.strokeStyle = btnColor.id;
+        
     })
 }
 

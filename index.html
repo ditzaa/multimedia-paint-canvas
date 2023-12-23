@@ -14,36 +14,45 @@
     <div id="main-div">
         <h1 id="header">Pictasso</h1>
         <div class="buttons-div">
-            <button class="button-class" id="btn-elipsa">Elipsa</button>
-            <button class="button-class" id="btn-dreptunghi">Dreptunghi</button>
-            <button class="button-class" id="btn-linie">Linie</button>
+            <div id="shape-btns">
+            <h3>Shape</h3>
+                <div>
+                    <img class="img-shape" id="btn-elipsa" 
+                        src="./media/oval.png" alt="oval">
+                    <img class="img-shape" id="btn-dreptunghi" 
+                        src="./media/rectangle.png" alt="rectangle">
+                    <img class="img-shape" id="btn-linie" 
+                        src="./media/line.png" alt="line"> 
+                </div>
+            </div>
             <div>
-                <h5>Size</h5>
+                <h3>Size</h3>
                 <input type="range" id="input-line-size" min="1" max="40" value="10">
             </div>
+
             <div id="color-picker-container">
-                <h5>Color picker</h5>
-                <div>
-                    <button class="button-class colors" id="black">Negru</button>
-                    <button class="button-class colors" id="red">Rosu</button>
-                    <button class="button-class colors" id="orange">Oranj</button>
-                    <button class="button-class colors" id="purple">Mov</button>
+                <h3>Color picker</h3>
+                <div class="color-row">
+                    <button class="button-class colors" id="black"></button>
+                    <button class="button-class colors" id="red"></button>
+                    <button class="button-class colors" id="orange"></button>
+                    <button class="button-class colors" id="purple"></button>
                 </div>
-                <div>
-                    <button class="button-class colors" id="yellow">Galben</button>
-                    <button class="button-class colors" id="green">Verde</button>
-                    <button class="button-class colors" id="blue">Albastru</button>
-                    <input type="color" id="color-picker" value="#FFB6C1">
+                <div class="color-row">
+                    <button class="button-class colors" id="yellow"></button>
+                    <button class="button-class colors" id="green"></button>
+                    <button class="button-class colors" id="blue"></button>
+                    <input type="color" id="color-picker" value="#FFB6C1"
+                    style="border-color: transparent;">
                 </div>
             </div> 
         </div>
         <canvas id="canvas">
             Your browser does not support the canvas element
         </canvas>
-        <div class="buttons-div">
-            <h3>Salvează</h3>
-            <button class="button-class" id="btn-save-raster">Raster</button>
-            <button class="button-class" id="btn-save-svg">Vectorial</button>
+        <div class="buttons-bottom-div">
+            <h3>Save</h3>
+            <button class="button-save" id="btn-save-raster">Raster</button>
         </div>
     </div>
 </body>

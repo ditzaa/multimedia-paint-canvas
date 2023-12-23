@@ -2,38 +2,82 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #000080;;
+    background-color: #000080;
+    color: white;
 }
 
-#main-div{
-
-}
-
-#header, h5, h3{
+#header{
     font-family:'Pacifico', Helvetica, sans-serif;
     color: white;
     font-size: 2rem;
-    margin: 10px 0px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family: "Verdana", "Courier New", monospace;
 }
 
 .buttons-div{
     margin-bottom: 10px;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
 }
 
-.button-class{
+#shape-btns{
+    display: block;
+    flex-direction: column;
+}
+
+.img-shape{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.button-shape{
+    width: 0px;
+    height: 0px;
+    border-style: none; 
+}
+
+
+.button-class, #color-picker{
+   width: 40px;
+   height: 40px;
+   margin-left: 10px;
+   border-radius: 10px;
+   border-style: none; 
+}
+
+#color-picker{
+    margin-top: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.color-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.buttons-bottom-div{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-save{
     text-align: center;
     background-color: white;
     color: #000080;
     padding: 1 rem;
-    font-family:'Pacifico', Helvetica, sans-serif;
+    font-family: "Verdana", "Courier New", monospace;
     font-size: 1.5rem;
     font-weight: bold;
-    border-radius: 2rem;
+    border-radius: 10px;
     margin-left: 10px;
 }
 
-#canvas{
-    /* background-color: white; */
-}
